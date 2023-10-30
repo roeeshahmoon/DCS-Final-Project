@@ -1,5 +1,4 @@
-[![](https://i.imgur.com/quaHllI.jpg)](https://i.imgur.com/quaHllI.jpg)
-
+![](https://i.imgur.com/quaHllI.jpg)
 
 
 
