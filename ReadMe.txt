@@ -1,8 +1,3 @@
-![](https://i.imgur.com/quaHllI.jpg)
-
-
-
-
 $$ main.c - include the main FSM states.
 
 $$ api.c - include the application functions high level
