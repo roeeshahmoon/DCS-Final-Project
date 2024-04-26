@@ -48,10 +48,6 @@ The system operates as follows:
 #### Mobility:
  Mobility to create a compact system that can be easily deployed and installed in different environments for monitoring and data collection applications.
 
-### Configuration
-![Config](Images/Config.png)
-
-
 ## Project modes:
 
 This project is divided into several work modes, each mode will work independently from the other modes and at the end of the GUI mode
@@ -92,6 +88,9 @@ Selecting a command script file containing the commands indicated above
 
 ![FSM](Images/State_machine.png)
 
+
+### Configuration
+![Config](Images/Config.png)
 
 ## Authors
 
