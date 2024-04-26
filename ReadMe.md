@@ -83,6 +83,10 @@ Selecting a command script file containing the commands indicated above
 
 ![Menu_Scripts](Images/Menu_Scripts.png)
 
+Choosing to load the flash or activate it:
+
+![LoadOrStartFile](Images/LoadOrStartFile.png)
+
 
 ## Finite State Machine
 
