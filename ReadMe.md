@@ -42,60 +42,31 @@
 
 This project is divided into several work modes, each mode will work independently from the other modes and at the end of the GUI mode
 
-![light_detector](Images/light_detector.jpeg)
+![Menu](Images/Menu.png)
 
 
-### Ports
+## Objects Detector System Mode
 
-- **Inputs**:
-  - `clk_i`: Clock input.
-  - `rst_ni`: Reset Negative input (active low).
-  - `psel_i`: Peripheral select input.
-  - `penable_i`: Peripheral enable input.
-  - `pwrite_i`: Write/Read enable input.
-  - `pstrb_i`: Byte enable input.
-  - `pwdata_i`: Write data input.
-  - `paddr_i`: Address input.
+The implementation of the Objects Detector System will dynamically monitor objects in space at a defined distance through a user interface 180 by performing only one scan within a scan scope of degrees and at an optimal level of accuracy, it uses a combination of a Serbo engine for scanning - and an ultra rangefinder. Sonic, the system receives a distance to mask, scans by the user's choice and a section of 180 degrees to identify and measure distances to moving objects. In the angular environment of a servo motor it is controlled by means of a Pulse Width Modulation (PWM) signal, the angle is controlled in particular by Duty Cycle The percentage determined with the help of the timer. Collected data undergoes an information processing process on the PC side to create a comprehensive understanding of the environment, providing information in real time of the distance objects.
 
-- **Outputs**:
-  - `pready_o`: Ready output.
-  - `pslverr_o`: Slave error output.
-  - `prdata_o`: Read data output.
-  - `busy_o`: Busy output.
-  - `done_o`: Done output.
+![Menu](Images/Menu.png)
 
-### Flow Chart
+When we identify objects in vertical space, we place them in the diagram according to their distance and angle
 
-![Flow_Chart](/doc/Images/Flow_Chart.png)
+## Telmeter System Mode
 
-### Control and Status
+Position the servo motor at the angle given to be selected through the user interface and display the distance measured from the distance sensor dynamically and in real time with a resolution of cm
 
-The accelerator operates based on control signals provided through the `psel_i`, `penable_i`, `pwdata_i` and `paddr_i` inputs from APB.
-Status of the accelerator operation is indicated through the `busy_o` and `done_o` outputs.
+![Menu](Images/Menu.png)
 
-## Verification 
 
-### Test Bench Block Diagram
 
-![Test_Bench](/doc/Images/Test_Bench.png)
 
-We read all the data for the testbench from file `Bus_File.txt`, we randomize all the data on the python script `golden.py` using `python random moudle`.
 
-The stimulus read instructions from  `Bus_File.txt` and generate APB master to write this data into the design.
- We wrote those data into files:
- `Param_File.txt`,
- `Mat_A.txt`,
- `Mat_B.txt`,
- `Mat_Res.txt`,
- `Flags_Res.txt`,
- `SP.txt`.
 
-### Test Example
+## Finite State Machine
 
- ![Test_Exa](/doc/Images/Test_Exa.png)
-
-In the end we are comparing between the result files from DUT `MAT_RES_DUT.txt` and `FLAGS_RES_DUT.txt` to golden script. 
-We print to the screen how much hits and miss we have.
+![Menu](Images/Menu.png)
 
 
 ## Authors
