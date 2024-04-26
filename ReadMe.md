@@ -83,6 +83,10 @@ Scripts activation of the entire system according to the file containing predefi
 
 ![Commands](Images/Commands.png)
 
+Selecting a command script file containing the commands indicated above
+
+![Menu_Scripts](Images/Menu_Scripts.png)
+
 
 ## Finite State Machine
 
