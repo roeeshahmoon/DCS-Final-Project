@@ -9,7 +9,7 @@ The purpose of the project is to implement, design and demonstrate an embedded s
 
 ## Features
 
-###Light source detection
+### Light source detection
 in the project we will develop a reliable method for detecting light sources within the scanning area using the LDR light sensors. The system should be able to differentiate between different light intensities and accurately determine the positions of the light sources, by calibration to be carried out in advance.
 
 ## High Level Design Block Diagram
