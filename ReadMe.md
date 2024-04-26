@@ -49,7 +49,7 @@ This project is divided into several work modes, each mode will work independent
 
 The implementation of the Objects Detector System will dynamically monitor objects in space at a defined distance through a user interface 180 by performing only one scan within a scan scope of degrees and at an optimal level of accuracy, it uses a combination of a Serbo engine for scanning - and an ultra rangefinder. Sonic, the system receives a distance to mask, scans by the user's choice and a section of 180 degrees to identify and measure distances to moving objects. In the angular environment of a servo motor it is controlled by means of a Pulse Width Modulation (PWM) signal, the angle is controlled in particular by Duty Cycle The percentage determined with the help of the timer. Collected data undergoes an information processing process on the PC side to create a comprehensive understanding of the environment, providing information in real time of the distance objects.
 
-![Menu](Images/Menu.png)
+![Object_Detector](Images/Object_Detector.png)
 
 When we identify objects in vertical space, we place them in the diagram according to their distance and angle
 
@@ -57,16 +57,18 @@ When we identify objects in vertical space, we place them in the diagram accordi
 
 Position the servo motor at the angle given to be selected through the user interface and display the distance measured from the distance sensor dynamically and in real time with a resolution of cm
 
-![Menu](Images/Menu.png)
+![Telemeter](Images/Telemeter.png)
 
 
+## System Detector Light Sources
 
+Implementation of a Dynamic Light Source Detection System to monitor light sources in space within a range of up to half a meter with a single scan in a 180-degree scanning range and optimal accuracy. 
 
 
 
 ## Finite State Machine
 
-![Menu](Images/Menu.png)
+![FSM](Images/State_machine.png)
 
 
 ## Authors
