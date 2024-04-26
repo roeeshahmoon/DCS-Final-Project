@@ -11,6 +11,21 @@
 
 ## Features
 
+The system consists of three main components:
+
+- Distance sensor: An Ultrasonic Sensor distance sensor is used to measure the distance between the Servo motor handle and the light source.
+- Light sensors: Two LDR light sensors are located on the sides of the distance sensor. These sensors are used to detect the location of the light source.
+- Servo motor: A Servo motor is used to rotate the light and distance sensors in a 180-degree range.
+
+The system operates as follows:
+
+1. The Servo motor rotates the light and distance sensors in a 180-degree range.
+2. The distance sensor measures the distance between the Servo motor handle and the light source at each position.
+3. The light sensors detect the location of the light source.
+4. The distance and location data of the light sources are sent to the microcontroller.
+5. The microcontroller processes the data and displays the location and distance results of the light sources on the PC screen through the user interface.
+
+
 #### Light source detection:
  We developed a reliable method for detecting light sources within the scanning area using the LDR light sensors. The system should be able to differentiate 
  between different light intensities and accurately determine the positions of the light sources, by calibration to be carried out in advance.
@@ -63,21 +78,6 @@ Position the servo motor at the angle given to be selected through the user inte
 ## System Detector Light Sources
 
 Implementation of a Dynamic Light Source Detection System to monitor light sources in space within a range of up to half a meter with a single scan in a 180-degree scanning range and optimal accuracy.
-
-The system consists of three main components:
-
-- Distance sensor: An Ultrasonic Sensor distance sensor is used to measure the distance between the Servo motor handle and the light source.
-- Light sensors: Two LDR light sensors are located on the sides of the distance sensor. These sensors are used to detect the location of the light source.
-- Servo motor: A Servo motor is used to rotate the light and distance sensors in a 180-degree range.
-
-The system operates as follows:
-
-1. The Servo motor rotates the light and distance sensors in a 180-degree range.
-2. The distance sensor measures the distance between the Servo motor handle and the light source at each position.
-3. The light sensors detect the location of the light source.
-4. The distance and location data of the light sources are sent to the microcontroller.
-5. The microcontroller processes the data and displays the location and distance results of the light sources on the PC screen through the user interface.
-
 
 ## Script Mode 
 Scripts activation of the entire system according to the file containing predefined Level High commands. The system can be operated automatically and all parts of the system can be tested. It is required to support the ability to send and receive up to three files and choose to run one of them separately and independently of the selection from the menu on the computer side. Only the supported commands:
