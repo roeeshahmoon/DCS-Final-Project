@@ -18,18 +18,18 @@
  degrees in continuous motion. and accurate
 
 
-## Data processing:
+### Data processing:
  Development of algorithms for processing the data collected from the ultrasonic distance meter and the LDR sensors. By processing the sensor data to create a comprehensive 
  understanding of the environment, that is, identifying the distance of objects and light sources.
 
-## Computer GUI user interface to design:
+### Computer GUI user interface to design:
  An intuitive user interface with the mouse to select the mode desired by the user and in addition we will present the results of the scan in time. In addition, the interface will 
  display relevant information regarding the distance from detected light beams and object distances by the Matplotlib book and Numpy.
 
-## Precision Calibration: 
+### Precision Calibration: 
  Ensuring the accuracy and reliability of the system by calibrating the sensors and servo motor to reduce measurement errors leads to improved performance.
 
-## Mobility:
+### Mobility:
  Mobility to create a compact system that can be easily deployed and installed in different environments for monitoring and data collection applications.
 
 ## Usage
