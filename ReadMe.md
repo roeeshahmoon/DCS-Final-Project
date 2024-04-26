@@ -20,10 +20,9 @@ The system consists of three main components:
 The system operates as follows:
 
 1. The Servo motor rotates the light and distance sensors in a 180-degree range.
-2. The distance sensor measures the distance between the Servo motor handle and the light source at each position.
-3. The light sensors detect the location of the light source.
-4. The distance and location data of the light sources are sent to the microcontroller.
-5. The microcontroller processes the data and displays the location and distance results of the light sources on the PC screen through the user interface.
+2. The distance sensor measures the distance between the Servo motor handle and the light or object source at each position.
+3. The distance and location data of the light sources are sent to the microcontroller.
+4. The microcontroller processes the data and displays the location and distance results of the light sources on the PC screen through the user interface.
 
 
 #### Light source detection:
