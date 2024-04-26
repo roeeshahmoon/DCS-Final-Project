@@ -35,7 +35,7 @@ An ultrasonic ranger will be used to measure the distance between the MCU-based 
 The project will implement precise control of the servo motor's angular movement using a PWM signal from the MCU. The servo motor should be able to identify the designated area of 180 degrees in continuous and accurate movement.
 
 #### Data Processing:
-Algorithms will be developed to process the data collected from the ultrasonic ranger and LDR sensors. By processing sensor data to create a comprehensive understanding of the environment, the system should be able to identify the distance of objects and light sources.
+Algorithms will be developed to process the data collected from the ultrasonic ranger and LDR sensors. By processing sensor data to create a comprehensive understanding of the environment, the system be able to identify the distance of objects and light sources.
 
 #### Computer GUI User Interface:
 A user-friendly interface will be designed using the mouse to select the desired mode for the user, and will also display the scanning results in real time.
@@ -50,6 +50,7 @@ We used a timer by creating a PWM to activate the trigger of the ULTRASONIC sens
 #### UART
 
 Universal Asyncroching Reciver Transmiter we used the COM1 communication port, 9600 baud rate, transfer of 8 bits with start and stop bits, using this protocol we communicated between the PC side and the MCU side
+
 ## Project modes:
 
 This project is divided into several work modes, each mode will work independently from the other modes and at the end of the GUI mode
