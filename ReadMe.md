@@ -4,7 +4,7 @@
 
 ## Target of the project 
  The purpose of the project is to implement, design and demonstrate an embedded system based on the MCU - PC and capable of detecting light sources and tracking objects in space 
- using a number of components such as the ultrasonic distance meter, sonic LDR light sensors and a servo motor. The main goal is to create a scanning mechanism that covers an area 
+ using a number of components such as the ultrasonic distance meter, LDR light sensors and a servo motor. The main goal is to create a scanning mechanism that covers an area 
  of 180 degrees to collect data from the surrounding environment just like.
  This innovative system can help promise for applications in civilian and military security systems, environmental monitoring, and various other scenarios requiring efficient 
  light source detection and object monitoring.
