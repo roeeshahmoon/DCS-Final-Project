@@ -48,11 +48,7 @@ and pipelined computational structure to achieve high throughput and reduced lat
 To use the Matrix Multiplication Accelerator in your Verilog design, instantiate the `matmul_pkg` module with appropriate parameters with the correct constrains
 
 ### Configuration
-
-- `BUS_WIDTH`: Width of the data bus connecting to the accelerator.
-- `DATA_WIDTH`: Width of each data element in the matrices.
-- `ADDR_WIDTH`: Width of the address bus for memory access.
-- `SP_NTARGETS`: Number of targets in the scratchpad memory.
+![Config](Images/Config.png)
 
 ### Ports
 
