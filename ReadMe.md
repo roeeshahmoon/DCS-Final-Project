@@ -25,29 +25,31 @@ The system operates as follows:
 4. The microcontroller processes the data and displays the location and distance results of the light sources on the PC screen through the user interface.
 
 
-#### Light source detection:
- We developed a reliable method for detecting light sources within the scanning area using the LDR light sensors. The system should be able to differentiate 
- between different light intensities and accurately determine the positions of the light sources, by calibration to be carried out in advance.
+#### Light Source Identification:
+The project will develop a reliable method for identifying light sources within the scanning area using LDR light sensors. The system should be able to differentiate between different light intensities and accurately determine the locations of light sources, using pre-calibration.
 
-#### Monitoring:
- Which determines precise control of the angular movement of the servo motor using a PWM signal from the MCU. The servo motor should be able to detect the intended area of 180 
- degrees in continuous motion. and accurate
+#### Object Monitoring:
+An ultrasonic ranger will be used to measure the distance between the MCU-based system and objects in the scanned area. A mechanism will be implemented to monitor the proximity of objects in the environment by sending a sound wave that returns and arrives, and calculating the distance function using the speed of sound parameter.
 
+#### Servo Motor: 
+The project will implement precise control of the servo motor's angular movement using a PWM signal from the MCU. The servo motor should be able to identify the designated area of 180 degrees in continuous and accurate movement.
 
-#### Data processing:
- Development of algorithms for processing the data collected from the ultrasonic distance meter and the LDR sensors. By processing the sensor data to create a comprehensive 
- understanding of the environment, that is, identifying the distance of objects and light sources.
+#### Data Processing:
+Algorithms will be developed to process the data collected from the ultrasonic ranger and LDR sensors. By processing sensor data to create a comprehensive understanding of the environment, the system should be able to identify the distance of objects and light sources.
 
-#### Computer GUI user interface to design:
- An intuitive user interface with the mouse to select the mode desired by the user and in addition we will present the results of the scan in time. In addition, the interface will 
- display relevant information regarding the distance from detected light beams and object distances by the Matplotlib book and Numpy.
+#### Computer GUI User Interface:
+A user-friendly interface will be designed using the mouse to select the desired mode for the user, and will also display the scanning results in real time.
 
-#### Precision Calibration: 
- Ensuring the accuracy and reliability of the system by calibrating the sensors and servo motor to reduce measurement errors leads to improved performance.
+#### ADC12
+We used an ADC12 to sample the digital voltage from the LDR, which we then sent to a computer and converted the digital voltage array to analog and then to distance using a linear function.
 
-#### Mobility:
- Mobility to create a compact system that can be easily deployed and installed in different environments for monitoring and data collection applications.
+#### Timer
 
+We used a timer by creating a PWM to activate the trigger of the ULTRASONIC sensor and in addition to activate the rotation of the mini robot by the servo motor, in addition to using the timer to create a delay on the LCD screen
+
+#### UART
+
+Universal Asyncroching Reciver Transmiter we used the COM1 communication port, 9600 baud rate, transfer of 8 bits with start and stop bits, using this protocol we communicated between the PC side and the MCU side
 ## Project modes:
 
 This project is divided into several work modes, each mode will work independently from the other modes and at the end of the GUI mode
