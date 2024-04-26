@@ -74,7 +74,9 @@ Position the servo motor at the angle given to be selected through the user inte
 
 ## System Detector Light Sources
 
-Implementation of a Dynamic Light Source Detection System to monitor light sources in space within a range of up to half a meter with a single scan in a 180-degree scanning range and optimal accuracy.
+Implementation of the System Detector Sources Light system for dynamically monitoring light sources in space within a range of up to half a meter by performing only one scan with a scan scope of 180 and at an optimal level of accuracy.
+
+With the help of two LDR type light sensors located on the sides of the distance sensor, it is possible to detect light sources in terms of location and distance within a scanning range of 180 degrees around the center point of the servo motor handle and display the results of the location and distance of the light sources on the PC screen through the user interface
 
 ## Script Mode 
 Scripts activation of the entire system according to the file containing predefined Level High commands. The system can be operated automatically and all parts of the system can be tested. It is required to support the ability to send and receive up to three files and choose to run one of them separately and independently of the selection from the menu on the computer side. Only the supported commands:
