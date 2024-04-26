@@ -34,21 +34,16 @@
 ### Mobility:
  Mobility to create a compact system that can be easily deployed and installed in different environments for monitoring and data collection applications.
 
-## Usage
-It is designed to efficiently perform matrix multiplication using a systolic array architecture, which enables a highly parallel
-and pipelined computational structure to achieve high throughput and reduced latency compared to traditional sequential methods.
-
-### Technology Stack
-
-- Design stage written in Verilog using HDL
-- Verification Stage written in Python Scripts, System Verilog and ModelSim
-
-### Instantiation
-
-To use the Matrix Multiplication Accelerator in your Verilog design, instantiate the `matmul_pkg` module with appropriate parameters with the correct constrains
-
 ### Configuration
 ![Config](Images/Config.png)
+
+
+## Project modes:
+
+This project is divided into several work modes, each mode will work independently from the other modes and at the end of the GUI mode
+
+![light_detector](Images/light_detector.jpeg)
+
 
 ### Ports
 
