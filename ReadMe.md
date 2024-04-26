@@ -12,7 +12,7 @@
 ## Features
 
 ### Light source detection:
- In the project we will develop a reliable method for detecting light sources within the scanning area using the LDR light sensors. The system should be able to differentiate 
+ We developed a reliable method for detecting light sources within the scanning area using the LDR light sensors. The system should be able to differentiate 
  between different light intensities and accurately determine the positions of the light sources, by calibration to be carried out in advance.
 
 ### Monitoring:
