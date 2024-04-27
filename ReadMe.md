@@ -3,7 +3,7 @@
 ![light_detector](Images/light_detector.jpeg)
 
 ## Target of the project 
- The purpose of the project is to implement, design and demonstrate an embedded system based on the MCU - PC and capable of detecting light sources and tracking objects in space 
+ The purpose of the project is to implement, dsesign and demonstrate an embedded system based on the MCU - PC and capable of detecting light sources and tracking objects in space 
  using a number of components such as the ultrasonic distance meter, LDR light sensors and a servo motor. The main goal is to create a scanning mechanism that covers an area 
  of 180 degrees to collect data from the surrounding environment just like radar.
  This innovative system can use for applications in civilian and military security systems, environmental monitoring and various other scenarios requiring essential light sources 
@@ -14,8 +14,8 @@
 The system consists of three main components:
 
 - Distance sensor: An Ultrasonic Sensor distance sensor is used to measure the distance between the Servo motor handle and the light source.
-- Light sensors: Two LDR light sensors are located on the sides of the distance sensor. These sensors are used to detect the location of the light source.
-- Servo motor: A Servo motor is used to rotate the light and distance sensors in a 180-degree range.
+- Light sensors: Two LDR light sensors are located on the sides of the distance sensor. These sensors are used to detect the location of the light source using ADC12.
+- Servo motor: A Servo motor is used to rotate the light and distance sensors in a 180-degree range by PWM wave duty cycle.
 
 The system operates as follows:
 
@@ -23,22 +23,6 @@ The system operates as follows:
 2. The distance sensor measures the distance between the Servo motor handle and the light or object source at each position.
 3. The distance and location data of the light sources are sent to the microcontroller.
 4. The microcontroller processes the data and displays the location and distance results of the light sources on the PC screen through the user interface.
-
-
-#### Light Source Identification:
-The project will develop a reliable method for identifying light sources within the scanning area using LDR light sensors. The system should be able to differentiate between different light intensities and accurately determine the locations of light sources, using pre-calibration.
-
-#### Object Monitoring:
-An ultrasonic ranger will be used to measure the distance between the MCU-based system and objects in the scanned area. A mechanism will be implemented to monitor the proximity of objects in the environment by sending a sound wave that returns and arrives, and calculating the distance function using the speed of sound parameter.
-
-#### Servo Motor: 
-The project will implement precise control of the servo motor's angular movement using a PWM signal from the MCU. The servo motor should be able to identify the designated area of 180 degrees in continuous and accurate movement.
-
-#### Data Processing:
-Algorithms will be developed to process the data collected from the ultrasonic ranger and LDR sensors. By processing sensor data to create a comprehensive understanding of the environment, the system be able to identify the distance of objects and light sources.
-
-#### Computer GUI User Interface:
-A user-friendly interface will be designed using the mouse to select the desired mode for the user, and will also display the scanning results in real time.
 
 #### ADC12
 We used an ADC12 to sample the digital voltage from the LDR, which we then sent to a computer and converted the digital voltage array to analog and then to distance using a linear function.
@@ -50,6 +34,15 @@ We used a timer by creating a PWM to activate the trigger of the ULTRASONIC sens
 #### UART
 
 Universal Asyncroching Reciver Transmiter we used the COM1 communication port, 9600 baud rate, transfer of 8 bits with start and stop bits, using this protocol we communicated between the PC side and the MCU side
+
+#### Servo Motor: 
+The project will implement precise control of the servo motor's angular movement using a PWM signal from the MCU. The servo motor should be able to identify the designated area of 180 degrees in continuous and accurate movement.
+
+#### Data Processing:
+Algorithms will be developed to process the data collected from the ultrasonic ranger and LDR sensors. By processing sensor data to create a comprehensive understanding of the environment, the system be able to identify the distance of objects and light sources.
+
+#### Computer GUI User Interface:
+A user-friendly interface will be designed using the mouse to select the desired mode for the user, and will also display the scanning results in real time.
 
 ## Project modes:
 
