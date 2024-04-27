@@ -27,7 +27,7 @@ The system operates as follows:
 #### ADC12
 We used an ADC12 to sample the digital voltage from the LDR, which we then sent to a computer and converted the digital voltage array to analog and then to distance using a linear function.
 
-#### Timer
+#### Timers
 
 We used a timer by creating a PWM to activate the trigger of the ULTRASONIC sensor and in addition to activate the rotation of the mini robot by the servo motor, in addition to using the timer to create a delay on the LCD screen
 
